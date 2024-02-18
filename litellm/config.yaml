@@ -1,0 +1,7 @@
+model_list:
+  - model_name: custom_model
+    litellm_params:
+      model: ollama/llama2:13b
+
+litellm_settings:
+  callbacks: custom_callbacks.proxy_handler_instance # sets litellm.callbacks = [proxy_handler_instance]
