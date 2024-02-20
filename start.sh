@@ -10,7 +10,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama serve
 
 # Terminal2 : to download a model
-ollama run lamma2:13b
+ollama run lamma2
 
 # If you want to use more models, terminate the app created by ollama run llama2:13b,
 # and execute "ollama run another model"
