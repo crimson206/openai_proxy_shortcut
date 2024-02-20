@@ -8,11 +8,6 @@ model_list:
     litellm_params:
       model: ollama/llama2
 
-model_list:
-  - model_name: gpt-3.5-turbo
-    litellm_params:
-      model: ollama/llama2
-
 litellm_settings:
   callbacks: custom_callbacks.proxy_handler_instance # sets litellm.callbacks = [proxy_handler_instance]
   drop_params: True
