@@ -12,12 +12,15 @@ ngrok_tunnels = ngrok.connect(
     authtoken=ngrok_auth_token, 
     proto="http", 
     addr="http://0.0.0.0:8801", 
+    #addr="http://localhost:11434/v1", 
     auth=f"{username}:{password}", 
 )
 
-print(ngrok_tunnels.url())
-with open('server_info', 'w') as file:
-    file.write(str(ngrok_tunnels.url()))
+public_url = ngrok_tunnels.url()
+
+with open("server_info.txt", "w") as file:
+    file.write(public_url)
+print(public_url)
 
 # Keep the tunnel alive (until the script is interrupted)
 try:
