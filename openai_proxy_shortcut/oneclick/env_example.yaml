@@ -1,7 +1,4 @@
-"""
-Set your ngrok_auth_token below,
-and rename this file to 'env.yaml''
-"""
+Introduction : "Set your ngrok_auth_token below, and rename this file to 'env.yaml'"
 
 NGROK_AUTH_TOKEN: "your ngrok token"
 CONFIG_PATH: "litellm/config.yaml"
